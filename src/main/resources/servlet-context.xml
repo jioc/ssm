@@ -60,4 +60,16 @@
         </property>
     </bean>
 
+<!--    &lt;!&ndash; 全局异常配置 1 &ndash;&gt;
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="defaultErrorView" value="error"></property>
+        <property name="exceptionAttribute" value="ex"></property>
+        <property name="exceptionMappings">
+            <props>
+                <prop key="com.shsxt.exceptions.ParamsException">paramsError</prop>
+                <prop key="com.shsxt.exceptions.BusinessException">businessError</prop>
+            </props>
+        </property>
+    </bean>-->
+
 </beans>
