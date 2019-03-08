@@ -6,7 +6,7 @@
 
     <!-- po 包扫描 -->
     <typeAliases>
-        <package name="com.shsxt.po" />
+        <package name="com.jioc.po" />
     </typeAliases>
 
     <plugins>

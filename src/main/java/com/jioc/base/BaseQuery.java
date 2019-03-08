@@ -1,4 +1,4 @@
-package com.shsxt.base;
+package com.jioc.base;
 
 public class BaseQuery {
     /**

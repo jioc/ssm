@@ -12,7 +12,7 @@
         http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
 
     <!-- 扫描基本包 过滤controller层 -->
-    <context:component-scan base-package="com.shsxt" >
+    <context:component-scan base-package="com.jioc" >
         <context:exclude-filter type="annotation"
                                 expression="org.springframework.stereotype.Controller" />
     </context:component-scan>
@@ -52,7 +52,7 @@
     <!-- aop 切面配置 -->
     <aop:config>
         <aop:pointcut id="servicePointcut"
-                      expression="execution(* com.shsxt.service..*.*(..))" />
+                      expression="execution(* com.jioc.service..*.*(..))" />
         <aop:advisor advice-ref="txAdvice" pointcut-ref="servicePointcut" />
     </aop:config>
 
@@ -61,13 +61,13 @@
         <property name="dataSource" ref="dataSource"></property>
         <property name="configLocation" value="classpath:mybatis.xml" />
 
-        <property name="mapperLocations" value="classpath:com/shsxt/mapper/*.xml" />
+        <property name="mapperLocations" value="classpath:com/jioc/mapper/*.xml" />
     </bean>
 
     <!-- 配置扫描器 -->
     <bean id="mapperScanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <!-- 扫描com.shsxt.dao这个包以及它的子包下的所有映射接口类 -->
-        <property name="basePackage" value="com.shsxt.dao" />
+        <!-- 扫描com.jioc.dao这个包以及它的子包下的所有映射接口类 -->
+        <property name="basePackage" value="com.jioc.dao" />
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
     </bean>
 </beans>

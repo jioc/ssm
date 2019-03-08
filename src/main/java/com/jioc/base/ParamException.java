@@ -1,4 +1,4 @@
-package com.shsxt.base;
+package com.jioc.base;
 
 /**
  * 参数异常类

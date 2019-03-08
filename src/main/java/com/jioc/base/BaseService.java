@@ -1,7 +1,10 @@
-package com.shsxt.base;
+package com.jioc.base;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.jioc.base.AssertUtil;
+import com.jioc.base.BaseMapper;
+import com.jioc.base.BaseQuery;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
@@ -9,7 +12,7 @@ import java.util.Map;
 
 public abstract class BaseService<T> {
     @Autowired
-    public BaseMapper <T> baseMapper;
+    public BaseMapper<T> baseMapper;
     
     /**
      * 添加记录

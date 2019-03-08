@@ -1,4 +1,4 @@
-package com.shsxt.base;
+package com.jioc.base;
 
 import org.springframework.dao.DataAccessException;
 
@@ -36,10 +36,10 @@ public interface BaseMapper<T> {
 
     /**
      * 分页查询记录
-     * @param map
+     * @param
      * @return
      */
-    public List<T> queryForPage(BaseQuery baseQuery) throws DataAccessException;
+    public List<T> queryForPage(com.jioc.base.BaseQuery baseQuery) throws DataAccessException;
     /**
      * 查询记录不带分页情况
      * @param map

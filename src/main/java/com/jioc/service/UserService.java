@@ -1,13 +1,13 @@
-package com.shsxt.service;
+package com.jioc.service;
 
-import com.shsxt.base.BaseService;
-import com.shsxt.dao.UserMapper;
-import com.shsxt.po.User;
+
+import com.jioc.dao.UserMapper;
+import com.jioc.po.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserService extends BaseService<User> {
+public class UserService extends com.jioc.base.BaseService<User> {
 
     @Autowired
     private UserMapper userMapper;

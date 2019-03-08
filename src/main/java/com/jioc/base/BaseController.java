@@ -1,7 +1,7 @@
-package com.shsxt.base;
+package com.jioc.base;
 
-import com.shsxt.exceptions.BusinessException;
-import com.shsxt.exceptions.ParamsException;
+import com.jioc.exceptions.BusinessException;
+import com.jioc.exceptions.ParamsException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import javax.servlet.http.HttpServletRequest;

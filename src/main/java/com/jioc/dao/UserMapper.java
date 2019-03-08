@@ -1,7 +1,7 @@
-package com.shsxt.dao;
+package com.jioc.dao;
 
-import com.shsxt.base.BaseMapper;
-import com.shsxt.po.User;
+import com.jioc.base.BaseMapper;
+import com.jioc.po.User;
 import org.springframework.stereotype.Repository;
 
 @Repository

@@ -1,7 +1,8 @@
-package com.shsxt.handler;
+package com.jioc.handler;
 
-import com.shsxt.exceptions.BusinessException;
-import com.shsxt.exceptions.ParamsException;
+
+import com.jioc.exceptions.BusinessException;
+import com.jioc.exceptions.ParamsException;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.ModelAndView;

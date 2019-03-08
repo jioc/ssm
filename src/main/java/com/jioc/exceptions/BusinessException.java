@@ -1,4 +1,4 @@
-package com.shsxt.exceptions;
+package com.jioc.exceptions;
 
 /**
  * Created by xlf on 2018/11/9.

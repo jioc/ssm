@@ -1,4 +1,4 @@
-package com.shsxt.base;
+package com.jioc.base;
 
 public class AssertUtil {
     
@@ -8,12 +8,12 @@ public class AssertUtil {
      */
     public static void isTrue(Boolean expression,String msg){
         if(expression){
-            throw new ParamException(msg);
+            throw new com.jioc.base.ParamException(msg);
         }   
     }
     public static void isTure(Boolean expression){
         if(expression){
-            throw new ParamException("参数异常");
+            throw new com.jioc.base.ParamException("参数异常");
         }
     }   
     /**
@@ -23,7 +23,7 @@ public class AssertUtil {
      */
     public static void isNull(Object object,String msg){
         if(object==null){
-            throw new ParamException(msg);
+            throw new com.jioc.base.ParamException(msg);
         }
     }
     /**
@@ -33,7 +33,7 @@ public class AssertUtil {
      */
     public static void notNull(Object object,String msg){
         if(object!=null){
-            throw new ParamException(msg);
+            throw new com.jioc.base.ParamException(msg);
         }
     }
 }

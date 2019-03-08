@@ -1,7 +1,7 @@
-package com.shsxt.controller;
+package com.jioc.controller;
 
-import com.shsxt.po.User;
-import com.shsxt.service.UserService;
+import com.jioc.po.User;
+import com.jioc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;

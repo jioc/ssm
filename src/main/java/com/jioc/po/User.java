@@ -1,4 +1,4 @@
-package com.shsxt.po;
+package com.jioc.po;
 
 public class User {
     private Integer id;
